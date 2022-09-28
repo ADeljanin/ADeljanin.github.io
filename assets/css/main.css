@@ -3988,7 +3988,7 @@ body.is-touch #banner {
   /* Logo */
 
   .title img {
-    width: 50px;
+    display: none;
   }
 
   /* Goto Next */
