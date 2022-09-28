@@ -207,8 +207,7 @@ a {
   -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
-  color: #e44c65;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -2665,6 +2664,12 @@ input[type="radio"] + label:before {
   width: 100%;
 }
 
+/* Logo */
+
+#logo img {
+  width: 100px;
+}
+
 /* List */
 
 ol {
@@ -3639,7 +3644,6 @@ body.landing #header {
   max-width: 95%;
   padding: 6em;
   position: relative;
-  text-align: right;
   vertical-align: middle;
   z-index: 1;
 }
@@ -3669,7 +3673,6 @@ body.landing #header {
 }
 
 #banner .content .image img {
-  border-radius: 100%;
   display: block;
   width: 100%;
 }
@@ -3750,7 +3753,7 @@ body.is-touch #banner {
   margin-top: 1em;
 }
 
-/* XLarge */
+/********************** XLarge ***********************/
 
 @media screen and (max-width: 1680px) {
   /* Basic */
@@ -3763,7 +3766,7 @@ body.is-touch #banner {
   }
 }
 
-/* Large */
+/****************** Large ***************************/
 
 @media screen and (max-width: 1280px) {
   /* Basic */
@@ -3793,7 +3796,7 @@ body.is-touch #banner {
 
   .quote-resized {
     font-size: 1.2rem;
-    margin-top: 1em;
+    margin-top: 0;
   }
   /* Wrapper */
 
@@ -3820,7 +3823,7 @@ body.is-touch #banner {
   }
 }
 
-/* Medium */
+/*************************** Medium *********************/
 
 @media screen and (max-width: 980px) {
   /* Basic */
@@ -3907,11 +3910,10 @@ body.is-touch #banner {
   #banner .content .image {
     margin: 0;
   }
-  /* .flex-skills {
-    display: flex;
-    gap: 2rem;
-    padding: 0;
-  } */
+
+  .icon-skills {
+    justify-content: center;
+  }
 
   /* Footer */
 
@@ -3920,7 +3922,7 @@ body.is-touch #banner {
   }
 }
 
-/* Small */
+/********************* Small *******************/
 
 #navPanel,
 #titleBar {
@@ -3981,6 +3983,12 @@ body.is-touch #banner {
   .quote {
     font-size: 1.5rem;
     padding-bottom: 2rem;
+  }
+
+  /* Logo */
+
+  .title img {
+    width: 50px;
   }
 
   /* Goto Next */
@@ -4236,7 +4244,7 @@ body.is-touch #banner {
   }
 }
 
-/* XSmall */
+/********************** XSmall ****************/
 
 @media screen and (max-width: 480px) {
   /* Basic */

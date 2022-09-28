@@ -261,8 +261,8 @@ a {
       "color #{_duration(transition)} ease-in-out"
     )
   );
-  border-bottom: dotted 1px;
-  color: _palette(accent1);
+
+  color: _palette(fg-bold);
   text-decoration: none;
 
   &:hover {
@@ -974,6 +974,12 @@ input[type="radio"] {
       width: 100%;
     }
   }
+}
+
+/* Logo */
+
+#logo img {
+  width: 100px;
 }
 
 /* List */
@@ -1789,7 +1795,6 @@ body.landing {
     max-width: 95%;
     padding: $size-wrapper-pad-tb;
     position: relative;
-    text-align: right;
     vertical-align: middle;
     z-index: 1;
 
@@ -1817,7 +1822,6 @@ body.landing {
       width: 18em;
 
       img {
-        border-radius: 100%;
         display: block;
         width: 100%;
       }
@@ -1874,7 +1878,7 @@ body.is-touch {
   }
 }
 
-/* XLarge */
+/****************** XLarge *******************/
 
 @include breakpoint("<=xlarge") {
   /* Basic */
@@ -1930,7 +1934,7 @@ body.is-touch {
 
   .quote-resized {
     font-size: 1rem;
-    margin-top: 1em;
+    margin-top: 0;
   }
   /* Wrapper */
 
@@ -1962,7 +1966,7 @@ body.is-touch {
   }
 }
 
-/* Medium */
+/************* Medium **********************/
 
 @include breakpoint("<=medium") {
   $size-wrapper-pad-tb: 4.5em;
@@ -2053,6 +2057,9 @@ body.is-touch {
       }
     }
   }
+  .icon-skills {
+    justify-content: center;
+  }
 
   /* Footer */
 
@@ -2061,7 +2068,7 @@ body.is-touch {
   }
 }
 
-/* Small */
+/********************* Small **********************/
 
 #navPanel,
 #titleBar {
@@ -2128,6 +2135,11 @@ body.is-touch {
   .quote {
     font-size: 0.8rem;
     padding-bottom: 2rem;
+  }
+
+  /* Logo */
+  .title img {
+    width: 50px;
   }
 
   /* Goto Next */
@@ -2340,6 +2352,7 @@ body.is-touch {
     gap: 2rem;
     padding: 0;
   }
+
   /* Footer */
 
   #footer {
@@ -2347,7 +2360,7 @@ body.is-touch {
   }
 }
 
-/* XSmall */
+/***************************** XSmall *******************************/
 
 @include breakpoint("<=xsmall") {
   $size-wrapper-pad-tb: 3em;

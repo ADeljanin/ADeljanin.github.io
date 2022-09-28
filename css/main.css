@@ -199,8 +199,7 @@ textarea {
 a {
   -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
-  color: #c14a5e;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -2285,6 +2284,11 @@ input[type="radio"] + label:before {
   width: 100%;
 }
 
+/* Logo */
+#logo img {
+  width: 100px;
+}
+
 /* List */
 ol {
   list-style: decimal;
@@ -3204,7 +3208,6 @@ body.landing #header {
   max-width: 95%;
   padding: 6em;
   position: relative;
-  text-align: right;
   vertical-align: middle;
   z-index: 1;
 }
@@ -3234,7 +3237,6 @@ body.landing #header {
 }
 
 #banner .content .image img {
-  border-radius: 100%;
   display: block;
   width: 100%;
 }
@@ -3299,7 +3301,7 @@ body.is-touch #banner {
   color: inherit;
 }
 
-/* XLarge */
+/****************** XLarge *******************/
 @media screen and (max-width: 1680px) {
   /* Basic */
   body,
@@ -3332,7 +3334,7 @@ body.is-touch #banner {
   }
   .quote-resized {
     font-size: 1rem;
-    margin-top: 1em;
+    margin-top: 0;
   }
   /* Wrapper */
   .wrapper {
@@ -3352,7 +3354,7 @@ body.is-touch #banner {
   }
 }
 
-/* Medium */
+/************* Medium **********************/
 @media screen and (max-width: 980px) {
   /* Basic */
   body,
@@ -3423,13 +3425,18 @@ body.is-touch #banner {
   #banner .content .image {
     margin: 0;
   }
+  .icon-skills {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   /* Footer */
   #footer {
     padding: 4.5em 0;
   }
 }
 
-/* Small */
+/********************* Small **********************/
 #navPanel,
 #titleBar {
   display: none;
@@ -3477,6 +3484,10 @@ body.is-touch #banner {
   .quote {
     font-size: 0.8rem;
     padding-bottom: 2rem;
+  }
+  /* Logo */
+  #logo img {
+    width: 50px;
   }
   /* Goto Next */
   .goto-next:before {
@@ -3684,7 +3695,7 @@ body.is-touch #banner {
   }
 }
 
-/* XSmall */
+/***************************** XSmall *******************************/
 @media screen and (max-width: 480px) {
   /* Basic */
   html,
