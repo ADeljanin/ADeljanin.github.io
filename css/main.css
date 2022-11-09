@@ -225,8 +225,9 @@ h2 {
 }
 
 h3 {
-  font-size: 1.35em;
+  font-size: 2.5em;
   line-height: 1.5em;
+  font-family: "Homemade Apple", cursive;
 }
 
 h4 {
@@ -3004,7 +3005,7 @@ body.is-touch #banner {
     font-size: 1.5em;
   }
   h3 {
-    font-size: 1.2em;
+    font-size: 1.8em;
   }
   h4 {
     font-size: 1em;
